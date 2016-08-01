@@ -371,6 +371,7 @@ ${ hueIcons.symbols() }
         <li><a href="#helpFindReplace" data-toggle="tab">${ _('Find/Replace')}</a></li>
         <li><a href="#helpFolding" data-toggle="tab">${ _('Folding')}</a></li>
         <li><a href="#helpOther" data-toggle="tab">${ _('Other')}</a></li>
+        <li><a href="#helpSettings" data-toggle="tab">${ _('Settings')}</a></li>
       </ul>
 
       <div class="tab-content">
@@ -761,9 +762,9 @@ ${ hueIcons.symbols() }
         </tr>
         </tbody>
       </table>
-        </div>
-        <div class="tab-pane" id="helpOther">
-          <table class="table">
+     </div>
+     <div class="tab-pane" id="helpOther">
+      <table class="table">
         <thead>
         <tr>
           <th>Windows/Linux</th>
@@ -791,11 +792,6 @@ ${ hueIcons.symbols() }
           <td>Ctrl-Shift-Z, Ctrl-Y</td>
           <td>Command-Shift-Z, Command-Y</td>
           <td>${ _('Redo')}</td>
-        </tr>
-        <tr>
-          <td>Ctrl-,</td>
-          <td>Command-,</td>
-          <td>${ _('Show the settings menu')}</td>
         </tr>
         <tr>
           <td>Ctrl-/</td>
@@ -844,7 +840,25 @@ ${ hueIcons.symbols() }
         </tr>
         </tbody>
       </table>
-        </div>
+     </div>
+     <div class="tab-pane" id="helpSettings">
+      <table class="table">
+        <thead>
+        <tr>
+          <th>Windows/Linux</th>
+          <th>Mac</th>
+          <th>${ _('Action')}</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Ctrl - ,</td>
+          <td>Command - ,</td>
+          <td>${ _('Show the settings menu')}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
       </div>
   </div>
   <div class="modal-footer">
@@ -1502,10 +1516,10 @@ ${ hueIcons.symbols() }
       <ul class="table-drop-menu hue-context-menu">
         <li class="editor-drop-value"><a href="javascript:void(0);">"<span class="editor-drop-identifier"></span>"</a></li>
         <li class="divider"></li>
-        <li class="editor-drop-select"><a href="javascript:void(0);">${ _('SELECT FROM ') } <span class="editor-drop-identifier"></span>...</a></li>
-        <li class="editor-drop-insert"><a href="javascript:void(0);">${ _('INSERT INTO') } <span class="editor-drop-identifier"></span>...</a></li>
-        <li class="editor-drop-update"><a href="javascript:void(0);">${ _('UPDATE') } <span class="editor-drop-identifier"></span>...</a></li>
-        <li class="editor-drop-delete"><a href="javascript:void(0);">${ _('DELETE FROM') } <span class="editor-drop-identifier"></span>...</a></li>
+        <li class="editor-drop-select"><a href="javascript:void(0);">SELECT FROM <span class="editor-drop-identifier"></span>...</a></li>
+        <li class="editor-drop-insert"><a href="javascript:void(0);">INSERT INTO <span class="editor-drop-identifier"></span>...</a></li>
+        <li class="editor-drop-update"><a href="javascript:void(0);">UPDATE <span class="editor-drop-identifier"></span>...</a></li>
+        <li class="editor-drop-delete"><a href="javascript:void(0);">DELETE FROM <span class="editor-drop-identifier"></span>...</a></li>
       </ul>
     </div>
     <div class="clearfix"></div>
